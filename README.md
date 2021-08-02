@@ -12,12 +12,12 @@ You should have .NET 5 SDK installed. You can get it [here](https://dotnet.micro
 
 ```cmd
 cd src\videoapp.api
+dotnet restore
 dotnet build
 ```
 
-or
+then, you could type:
 
 ```cmd
-cd src\videoapp.api
 dotnet run
 ```
