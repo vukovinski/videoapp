@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "videoapp.api", "src\videoap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "videoapp.models", "src\videoapp.models\videoapp.models.csproj", "{3C74374E-D6EC-4D71-9523-6ED45206747E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F2674133-49C2-40D5-BE19-F181BF8FA567}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
