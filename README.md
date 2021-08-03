@@ -1,5 +1,7 @@
 # videoapp
 
+Website with movie trailer search engine.
+
 Uses and aggregates data from IMDB and Youtube to provide a web API for searching for movie trailers.
 
 ## how to build (and run)
@@ -20,4 +22,16 @@ then, you could type:
 
 ```cmd
 dotnet run
+```
+
+navigate to:
+
+```
+https://localhost:5001/
+```
+
+or browse API definition
+
+```
+https://localhost:5001/swagger/index.html
 ```
