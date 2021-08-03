@@ -24,9 +24,15 @@
         }
 
         .search-box {
+            max-width: 920px;
             padding-left: 25px;
             padding-right: 25px;
-            max-width: 920px;
+        }
+
+        .movie {
+            padding: 25px;
+            margin-bottom: 70px;
+            background-color: wheat;
         }
 
         .footer {
@@ -46,12 +52,17 @@
         </div>
         <div class="search-box">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter the name of a movie" aria-label="Movie title" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                <input id="search" type="text" class="form-control" placeholder="Enter the name of a movie" aria-label="Movie title" aria-describedby="button-addon2">
+                <button id="search-button" class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="spinner" class="spinner-border visually-hidden" role="status" style="width: 6rem; height: 6rem; margin-top: 25vh;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
         </div>
         <div class="results-view">
-
+            <!-- populated dynamically -->
         </div>
     </div>
     <div class="footer">

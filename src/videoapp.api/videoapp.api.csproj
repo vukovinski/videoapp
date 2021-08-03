@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Content\data.js" />
+    <None Remove="Content\index.html" />
     <None Remove="Monikers.imagemanifest" />
   </ItemGroup>
 
@@ -12,6 +14,11 @@
     <content Include="Monikers.imagemanifest">
       <IncludeInVSIX>true</IncludeInVSIX>
     </content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Content\data.js" />
+    <EmbeddedResource Include="Content\index.html" />
   </ItemGroup>
 
   <ItemGroup>

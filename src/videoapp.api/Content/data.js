@@ -1,395 +1,171 @@
-﻿const data = [
-  {
-    "retrievedAt": "2021-08-01T19:40:37.106358Z",
-    "imdbData": {
-      "movie": {
-        "id": "tt3778644",
-        "resultType": "Title",
-        "image": "https://imdb-api.com/images/original/MV5BOTM2NTI3NTc3Nl5BMl5BanBnXkFtZTgwNzM1OTQyNTM@._V1_Ratio0.7273_AL_.jpg",
-        "title": "Solo: A Star Wars Story",
-        "description": "(2018)"
-      },
-      "rating": {
-        "imDbId": "tt3778644",
-        "title": "Solo: A Star Wars Story",
-        "fullTitle": "Solo: A Star Wars Story (2018)",
-        "type": "Movie",
-        "year": "2018",
-        "imDb": "6.9",
-        "metacritic": "62",
-        "theMovieDb": "6.6",
-        "rottenTomatoes": "",
-        "tV_com": "",
-        "filmAffinity": "6.0",
-        "errorMessage": ""
-      }
-    },
-    "youtubeTrailersData": {
-      "kind": "youtube#searchListResponse",
-      "etag": "t7n_TYQPgjna8BwAz7t7uldQ3b8",
-      "nextPageToken": "CAUQAA",
-      "regionCode": "US",
-      "pageInfo": {
-        "totalResults": 429085,
-        "resultsPerPage": 5
-      },
-      "items": [
-        {
-          "kind": "youtube#searchResult",
-          "etag": "exebD8O5i0zd0KDMnfcPHo8oo0Y",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "7dvLdszjsDU"
-          },
-          "snippet": {
-            "publishedAt": "2018-02-04T23:53:29Z",
-            "channelId": "UC_vz6SvmIkYs1_H3Wv2SKlg",
-            "title": "Solo: A Star Wars Story (2018) | SUPER BOWL TRAILER",
-            "description": "During an adventure into a dark criminal underworld, Han Solo meets his future copilot Chewbacca and encounters Lando Calrissian years before joining the ...",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/7dvLdszjsDU/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/7dvLdszjsDU/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "IMDb",
-            "liveBroadcastContent": "none",
-            "publishTime": "2018-02-04T23:53:29Z"
-          }
-        },
-        {
-          "kind": "youtube#searchResult",
-          "etag": "jJeRI24YNN9bt2jkl89YueOyDQQ",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "U3asfxRMRtE"
-          },
-          "snippet": {
-            "publishedAt": "2018-04-16T14:16:41Z",
-            "channelId": "UCzNWVDZQ55bjq8uILZ7_wyQ",
-            "title": "SOLO: A STAR WARS STORY &quot;Chewie Meets Han&quot; Trailer",
-            "description": "The Latest BLOCKBUSTERS are HERE ▻ https://www.youtube.com/playlist?list=PL3HDxuj_oceDEQGSpLLOqZjjy05MwFOSp SOLO: A STAR WARS STORY ...",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/U3asfxRMRtE/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/U3asfxRMRtE/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "FRESH Movie Trailers",
-            "liveBroadcastContent": "none",
-            "publishTime": "2018-04-16T14:16:41Z"
-          }
-        },
-        {
-          "kind": "youtube#searchResult",
-          "etag": "eKSqHyejGnD46yk_rvB0jShLPyo",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "8N3Tqa4Cr20"
-          },
-          "snippet": {
-            "publishedAt": "2018-02-06T21:34:20Z",
-            "channelId": "UCCI2URl1uXl8ijfoboX9nRg",
-            "title": "New Trailer | Solo: A Star Wars Story (2018)",
-            "description": "During an adventure into a dark criminal underworld, Han Solo meets his future copilot Chewbacca and encounters Lando Calrissian years before joining the ...",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/8N3Tqa4Cr20/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/8N3Tqa4Cr20/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "247freehdmovie",
-            "liveBroadcastContent": "none",
-            "publishTime": "2018-02-06T21:34:20Z"
-          }
-        },
-        {
-          "kind": "youtube#searchResult",
-          "etag": "TOyq4pUOdtpStsr82hkrvcVZKO8",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "UtxkUICY9wM"
-          },
-          "snippet": {
-            "publishedAt": "2018-04-09T04:21:03Z",
-            "channelId": "UCvnL1w1-5z0o7kGQy-v6XOw",
-            "title": "SOLO: A Star Wars Story Trailer 2 (2018)",
-            "description": "The second Trailer for \"Solo: A Star Wars Story\" Note | Solo: A Star Wars Story trailer courtesy of Disney. | All Rights Reserved.",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/UtxkUICY9wM/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/UtxkUICY9wM/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "KinoStar Trailer",
-            "liveBroadcastContent": "none",
-            "publishTime": "2018-04-09T04:21:03Z"
-          }
-        },
-        {
-          "kind": "youtube#searchResult",
-          "etag": "zWBcJf87QypfLjcSU_VxzVzvmds",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "jfSFCdIVLWU"
-          },
-          "snippet": {
-            "publishedAt": "2018-04-09T07:05:48Z",
-            "channelId": "UCE-91a9iNIN9C7u_NgSCVyw",
-            "title": "SOLO: A Star Wars Story - Trailer - Star Wars NL",
-            "description": "Bekijk hier de nieuwe trailer van Solo: A Star Wars Story. Vanaf 23 mei in de bioscoop! Kijk voor meer info en tickets: http://disney.nl/films/solo-a-star-wars-story.",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/jfSFCdIVLWU/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/jfSFCdIVLWU/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "Star Wars NL",
-            "liveBroadcastContent": "none",
-            "publishTime": "2018-04-09T07:05:48Z"
-          }
-        }
-      ]
+﻿function wClass(element, className) {
+  element.classList.add(className);
+  return element;
+}
+
+function wAttribute(element, attributeName, attributeValue) {
+  element.setAttribute(attributeName, attributeValue);
+  return element;
+}
+
+function wChild(element, child) {
+  element.appendChild(child);
+  return element;
+}
+
+function makePlayer(trailer, w, h) {
+  var player = wAttribute(wAttribute(wAttribute(wAttribute(wAttribute(wAttribute(
+    document.createElement('iframe'),
+    'width', `${w}`), 'height', `${h}`),
+    'src', `https://www.youtube-nocookie.com/embed/${trailer.id.videoId}?controls=0&autoplay=1`),
+    'title', 'Youtube video player'),
+    'frameborder', '0'),
+    'allow', 'accelerometer; autoplay; clipboard - write; encrypted - media; gyroscope; picture -in -picture; allowfullscreen');
+  return player;
+}
+
+function withCarouselInner(carousel, trailers) {
+  var inner_div = wClass(document.createElement('div'), 'carousel-inner');
+  for (var i = 0; i < trailers.length; i++) {
+    var item = wClass(document.createElement('div'), 'carousel-item');
+    var item_img = wAttribute(wAttribute(wClass(wClass(document.createElement('img'), 'd-block'), 'w-100'), 'alt', `Trailer ${i + 1}`), 'mode', 'image');
+    var item_caption_div = wClass(wClass(wClass(document.createElement('div'), 'carousel-caption'), 'd-none'), 'd-md-block');
+    var item_caption_p = document.createElement('p'); item_caption_p.innerText = trailers[i].snippet.title;
+
+    if (i === 0) {
+      item = wClass(item, 'active');
     }
-  },
-  {
-    "retrievedAt": "2021-08-01T19:40:37.0750576Z",
-    "imdbData": {
-      "movie": {
-        "id": "tt3748528",
-        "resultType": "Title",
-        "image": "https://imdb-api.com/images/original/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_Ratio0.7273_AL_.jpg",
-        "title": "Rogue One: A Star Wars Story",
-        "description": "(2016)"
-      },
-      "rating": {
-        "imDbId": "tt3748528",
-        "title": "Rogue One: A Star Wars Story",
-        "fullTitle": "Rogue One: A Star Wars Story (2016)",
-        "type": "Movie",
-        "year": "2016",
-        "imDb": "7.8",
-        "metacritic": "65",
-        "theMovieDb": "7.5",
-        "rottenTomatoes": "",
-        "tV_com": "7.2",
-        "filmAffinity": "6.9",
-        "errorMessage": ""
+
+    const trailer = trailers[i];
+    item_img.src = trailers[i].snippet.thumbnails.high.url;
+    item_img.addEventListener('click', (e) => {
+      var mode = e.target.getAttribute('mode');
+      if (mode && mode === 'image') {
+        var player = wAttribute(makePlayer(trailer, e.target.width, e.target.height), 'mode', 'video');
+        e.target.parentNode.replaceChild(player, e.target);
       }
-    },
-    "youtubeTrailersData": {
-      "kind": "youtube#searchListResponse",
-      "etag": "ia_Y8riYhlbhm31yoHQwUYJvaWw",
-      "nextPageToken": "CAUQAA",
-      "regionCode": "US",
-      "pageInfo": {
-        "totalResults": 84336,
-        "resultsPerPage": 5
-      },
-      "items": [
-        {
-          "kind": "youtube#searchResult",
-          "etag": "iT_kqVIgR4W_Mkh5i0zP7_PPpgY",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "uKDdMAI-onI"
-          },
-          "snippet": {
-            "publishedAt": "2016-04-07T13:49:40Z",
-            "channelId": "UCi8e0iOVk1fEOogdfu4YgfA",
-            "title": "Rogue One: A Star Wars Story Official Teaser Trailer #1 (2016) - Felicity Jones Movie HD",
-            "description": "Get Tickets - http://www.fandango.com/rogueone:astarwarsstory2016_187530/movieoverview?cmp=MCYT_YouTube_Desc Subscribe to TRAILERS: ...",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/uKDdMAI-onI/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/uKDdMAI-onI/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "Movieclips Trailers",
-            "liveBroadcastContent": "none",
-            "publishTime": "2016-04-07T13:49:40Z"
-          }
-        },
-        {
-          "kind": "youtube#searchResult",
-          "etag": "DikT4FRxVsIncO-o4dhJfNDbJJY",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "Wji-BZ0oCwg"
-          },
-          "snippet": {
-            "publishedAt": "2016-04-07T11:49:27Z",
-            "channelId": "UCZGYJFUizSax-yElQaFDp5Q",
-            "title": "ROGUE ONE: A STAR WARS STORY Official Teaser Trailer",
-            "description": "Get your first look at ROGUE ONE: A STAR WARS STORY in theaters this December. Visit Star Wars at http://www.starwars.com Subscribe to Star Wars on ...",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/Wji-BZ0oCwg/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/Wji-BZ0oCwg/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "Star Wars",
-            "liveBroadcastContent": "none",
-            "publishTime": "2016-04-07T11:49:27Z"
-          }
-        },
-        {
-          "kind": "youtube#searchResult",
-          "etag": "c7QblYGj20tHNGvHq2CldbLpC78",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "sC9abcLLQpI"
-          },
-          "snippet": {
-            "publishedAt": "2016-10-13T11:47:33Z",
-            "channelId": "UCZGYJFUizSax-yElQaFDp5Q",
-            "title": "Rogue One: A Star Wars Story Trailer #2 (Official)",
-            "description": "Watch the official second trailer for Rogue One: A Star Wars Story, in which Jyn Erso leads a group of unlikely heroes to steal the plans to the Death Star, the ...",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/sC9abcLLQpI/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/sC9abcLLQpI/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "Star Wars",
-            "liveBroadcastContent": "none",
-            "publishTime": "2016-10-13T11:47:33Z"
-          }
-        },
-        {
-          "kind": "youtube#searchResult",
-          "etag": "okMBozdvIx1vKN2yEFLn-BMEGdI",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "NBuf__icGCQ"
-          },
-          "snippet": {
-            "publishedAt": "2016-10-13T12:03:32Z",
-            "channelId": "UCLRlryMfL8ffxzrtqv0_k_w",
-            "title": "ROGUE ONE: A Star Wars Story Trailer 3 (2016)",
-            "description": "Official \"Rogue One: A Star Wars Story\" Movie Trailer 3 2016 | Subscribe ➤ http://abo.yt/kc | Felicity Jones Movie #Trailer | Release: 16 Dec 2016 ...",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/NBuf__icGCQ/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/NBuf__icGCQ/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "KinoCheck International",
-            "liveBroadcastContent": "none",
-            "publishTime": "2016-10-13T12:03:32Z"
-          }
-        },
-        {
-          "kind": "youtube#searchResult",
-          "etag": "Bi2GVOUzcQ11vFbT7rz0pBnOD3w",
-          "id": {
-            "kind": "youtube#video",
-            "videoId": "WHWkC1Vceko"
-          },
-          "snippet": {
-            "publishedAt": "2016-10-13T14:54:16Z",
-            "channelId": "UCagplPOBQE4pDM75n7h6jPA",
-            "title": "Rogue One: A Star Wars Story Official Trailer #3 (2016) -- Regal Cinemas [HD]",
-            "description": "Rogue One: A Star Wars Story opens December 16, 0216. The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to ...",
-            "thumbnails": {
-              "_default": null,
-              "medium": {
-                "url": "https://i.ytimg.com/vi/WHWkC1Vceko/mqdefault.jpg",
-                "width": 320,
-                "height": 180
-              },
-              "high": {
-                "url": "https://i.ytimg.com/vi/WHWkC1Vceko/hqdefault.jpg",
-                "width": 480,
-                "height": 360
-              }
-            },
-            "channelTitle": "Regal",
-            "liveBroadcastContent": "none",
-            "publishTime": "2016-10-13T14:54:16Z"
-          }
-        }
-      ]
+    });
+    item = wChild(item, item_img);
+    item_caption_div = wChild(item_caption_div, item_caption_p);
+    item = wChild(item, item_caption_div);
+    inner_div = wChild(inner_div, item);
+  }
+  return wChild(carousel, inner_div);
+}
+
+function withCarouselIndicators(carousel, trailers) {
+  if (trailers && trailers.length > 1) {
+    var indicators_div = wClass(document.createElement('div'), 'carousel-indicators');
+    for (var i = 0; i < trailers.length; i++) {
+      var indicator = wAttribute(wAttribute(wAttribute(wAttribute(
+        document.createElement('button'),
+        'type', 'button'),
+        'data-bs-target', `#${carousel.id}`),
+        'data-bs-slide-to', `${i}`),
+        'aria-label', `Trailer ${i + 1}`);
+
+      if (i === 0) {
+        indicator = wClass(indicator, 'active');
+      }
+
+      indicator.addEventListener('click', (e) => {
+        var index = e.target.getAttribute('data-bs-slide-to');
+        bootstrap.Carousel.getOrCreateInstance(carousel).to(index);
+      });
+      indicators_div.appendChild(indicator);
+    }
+    return wChild(carousel, indicators_div);
+  }
+  return carousel;
+}
+
+function withCarouselControls(carousel, trailers) {
+  if (trailers && trailers.length > 1) {
+    var previous = wAttribute(wAttribute(wAttribute(wClass(
+      document.createElement('button'),
+      'carousel-control-prev'), 'type', 'button'),
+      'data-bs-target', `#${carousel.id}`),
+      'data-bs-slide', 'prev');
+    var previous_icon = wAttribute(wClass(document.createElement('span'), 'carousel-control-prev-icon'), 'aria-hidden', 'true');
+    var previous_span = wClass(document.createElement('span'), 'visually-hidden'); previous_span.innerText = 'Previous';
+    previous = wChild(previous, previous_icon);
+    previous = wChild(previous, previous_span);
+    carousel.appendChild(previous);
+
+    var next = wAttribute(wAttribute(wAttribute(wClass(
+      document.createElement('button'),
+      'carousel-control-next'), 'type', 'button'),
+      'data-bs-target', `#${carousel.id}`),
+      'data-bs-slide', 'next');
+    var next_icon = wAttribute(wClass(document.createElement('span'), 'carousel-control-next-icon'), 'aria-hidden', 'true');
+    var next_span = wClass(document.createElement('span'), 'visually-hidden'); next_span.innerText = 'Next';
+    next = wChild(next, next_icon);
+    next = wChild(next, next_span);
+    carousel.appendChild(next);
+
+    previous.addEventListener('click', (e) => {
+      bootstrap.Carousel.getOrCreateInstance(carousel).prev();
+    });
+
+    next.addEventListener('click', (e) => {
+      bootstrap.Carousel.getOrCreateInstance(carousel).next();
+    });
+  }
+  return carousel;
+}
+
+function makeCarousel(movie, trailers) {
+  var carousel_id = `carousel-${movie.imdbData.movie.title}`;
+  var carousel = withCarouselControls(withCarouselIndicators(withCarouselInner(wAttribute(wClass(wClass(
+    document.createElement('div'),
+    'carousel'),
+    'slide'),
+    'data-bs-ride', 'carousel'), trailers), trailers), trailers);
+  carousel.id = carousel_id;
+  return carousel;
+}
+
+function showData(data) {
+  var element = document.getElementsByClassName('results-view')[0];
+  if (data && data.length > 0) {
+    for (var i = 0; i < data.length; i++) {
+      var movie = data[i];
+      var movie_div = wClass(document.createElement('div'), 'movie');
+      var movie_title = wClass(document.createElement('h3'), 'display-3'); movie_title.textContent = movie.imdbData.movie.title; movie_div.appendChild(movie_title);
+      var movie_release = document.createElement('p'); movie_release.textContent = movie.imdbData.rating.year; movie_div.appendChild(movie_release);
+      var movie_rating_imdb = document.createElement('p'); movie_rating_imdb.textContent = movie.imdbData.rating.imDb; movie_div.appendChild(movie_rating_imdb);
+      var movie_description = document.createElement('p'); movie_description.textContent = movie.imdbData.title.plot; movie_div.appendChild(movie_description);
+      var movie_carousel = makeCarousel(movie, movie.youtubeTrailersData.items); movie_div.appendChild(movie_carousel);
+
+      element.appendChild(movie_div);
     }
   }
-];
-
-function showData() {
-  var element = document.getElementsByClassName('results-view')[0];
-  for (var i = 0; i < data.length; i++) {
-    var movie = data[i];
-    var movie_div = document.createElement('div');
-    var movie_title = document.createElement('h3'); movie_title.textContent = movie.imdbData.movie.title; movie_div.appendChild(movie_title);
-    var movie_release = document.createElement('p'); movie_release.textContent = movie.imdbData.rating.year; movie_div.appendChild(movie_release);
-    var movie_rating_imdb = document.createElement('p'); movie_rating_imdb.textContent = movie.imdbData.rating.imDb; movie_div.appendChild(movie_rating_imdb);
-    var movie_description = document.createElement('p'); movie_description.textContent = movie.imdbData.rating.description; movie_div.appendChild(movie_description);
-    var movie_thumbnail = document.createElement('img'); movie_thumbnail.src = movie.youtubeTrailersData.items[0].snippet.thumbnails.high.url; movie_div.appendChild(movie_thumbnail);
-
-    element.appendChild(movie_div);
+  else {
+    element.innerHTML = '<p>Sorry, your search returned no results!</p>';
   }
 }
 
-showData();
+var lastSearch = "";
+
+async function search() {
+  var searchString = document.getElementById('search').value;
+  if (searchString && searchString !== "" && searchString !== lastSearch) {
+    lastSearch = searchString;
+    document.getElementById('spinner').classList.remove('visually-hidden');
+    document.getElementsByClassName('results-view')[0].innerHTML = '';
+    let response = await fetch(`/MovieTrailers?searchString=${searchString}`);
+    if (response.ok) {
+      showData(await response.json());
+    }
+    document.getElementById('spinner').classList.add('visually-hidden');
+  }
+}
+
+function init() {
+  var search_button = document.getElementById('search-button');
+  search_button.addEventListener('click', async (e) => {
+    await search();
+  })
+}
+
+init();

@@ -19,6 +19,19 @@ namespace videoapp.api.Services.Imdb
         public string image { get; set; }
         public string title { get; set; }
         public string description { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is ImdbSearchMoviesItem other_movie)
+                return id == other_movie.id;
+            else
+                return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return id.GetHashCode();
+        }
     }
 
     public enum SearchType
